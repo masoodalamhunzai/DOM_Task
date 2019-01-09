@@ -8,6 +8,7 @@ let section = document.getElementById('main');
    section.style.margin = "0 auto";
    section.style.padding = "1.5rem";
    section.style.borderRadius = "0.5rem";
+ 
 
 let heading = document.getElementById('heading');
    heading.style.width = "60%";
@@ -16,6 +17,7 @@ let heading = document.getElementById('heading');
    heading.style.margin = "0 auto";
    heading.style.padding = "0.2rem";
    heading.style.borderRadius = "10px";
+   heading.style.boxShadow = "2px 4px 8px 2px grey";
 
    heading.firstElementChild.textContent = "Welcome to JavaScript :: DOM ";
    heading.firstElementChild.style.color = "green";
