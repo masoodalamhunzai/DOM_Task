@@ -126,7 +126,7 @@ let _para4Img = para4.children[1];
    if(_para4Img.hasAttribute('src') == false){
    _para4Img.setAttribute("width","1000px");
    _para4Img.setAttribute("height","500px");
-   _para4Img.setAttribute("src","img.jpg");
+   _para4Img.setAttribute("src","../img.jpg");
    _para4Img.style.borderRadius = "0 0 0.3rem 0.3rem";
    }else{
       _para4Img.removeAttribute('src');
