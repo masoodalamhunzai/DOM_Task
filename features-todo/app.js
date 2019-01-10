@@ -19,11 +19,11 @@ let _errorlist = document.getElementById('lists');
         }
     });
 
-    // document.body.addEventListener('click',function(e){
-    //     if(e.target.className == "delete"){
-    //      e.target.parentElement.remove();
-    //     }
-    // });
+    document.body.addEventListener('click',function(e){
+        if(e.target.className == "delete"){
+         e.target.parentElement.remove();
+        }
+    });
 
    function addListItems(){
         let _outPutText =_input.value;
@@ -57,10 +57,10 @@ let _errorlist = document.getElementById('lists');
 
             removeBtn.appendChild(error);
             removeBtn.setAttribute("value",error);
-            removeBtn.addEventListener('click',removeItems);
-            function removeItems(){
-                  _liText.remove();
-            }
+           // removeBtn.addEventListener('click',removeItems);
+            // function removeItems(){
+            //       _liText.remove();
+            // }
             removeBtn.style.textAlign = "right";
             removeBtn.style.display = "inline-block";
             removeBtn.style.marginLeft = "5rem";
