@@ -18,7 +18,6 @@ let _errorlist = document.getElementById('lists');
             }
         }
     });
-
     document.body.addEventListener('click',function(e){
         if(e.target.className == "delete"){
          e.target.parentElement.remove();
@@ -75,7 +74,6 @@ let _errorlist = document.getElementById('lists');
             }
         }
     }
-
 //    function clearAll(){  
 //     let _clearList = document.getElementById('ul');
 //        let i =0;
