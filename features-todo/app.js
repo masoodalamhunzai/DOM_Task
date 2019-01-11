@@ -1,7 +1,7 @@
 // TO DO App
 
-let container = document.getElementById('container');
-    container.style.margin = "0 auto";
+let _container = document.getElementById('container');
+    _container.style.margin = "0 auto";
 let _input = document.getElementById('input');
 let _addBtn =  document.getElementById('addList');
 let _clearBtn =  document.getElementById('clearTask');
@@ -11,9 +11,9 @@ let _errorlist = document.getElementById('lists');
 
     document.body.addEventListener('click',function (e){
         if(e.target.id == "clearTask"){
-            let _trItems = e.target.previousElementSibling.firstElementChild.children;
+            let _liItems = e.target.previousElementSibling.firstElementChild.children;
             let i =0;
-            while(i<_trItems.length){
+            while(i<_liItems.length){
             e.target.previousElementSibling.firstElementChild.children[i].remove();
             }
         }
@@ -64,11 +64,11 @@ let _errorlist = document.getElementById('lists');
             }else{
             let _errorMsg = _errorlist.lastChild.length;  
             if(_errorMsg >0){
-            let errorHeading = document.createElement("h4");
-            errorHeading.setAttribute('id','errorText');
+            let _errorHeading = document.createElement("h4");
+            _errorHeading.setAttribute('id','errorText');
             let errorText = document.createTextNode("Please enter some value.");
-            errorHeading.appendChild(errorText);
-            _errorlist.append(errorHeading);
+            _errorHeading.appendChild(errorText);
+            _errorlist.append(_errorHeading);
             _errorlist.style.color = "maroon";     
             }else{
                 console.log("error message already exist.");
