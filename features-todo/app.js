@@ -28,33 +28,24 @@ let _errorlist = document.getElementById('lists');
    function addListItems(){
         let _outPutText =_input.value;
         if(_outPutText !=""){
-
             let _ul = document.getElementById('ul');
-
             let _li = document.createElement("li");
                 _li.setAttribute('class','li') 
                 _li.style.display = "flex";
                 _li.style.paddingTop = "0.5rem";
                 _li.style.justifyContent = "space-between";
-
             let _liText = _ul.appendChild(_li);
-
             let h3 = document.createElement('h3');
             let removeBtn = document.createElement('button');
                removeBtn.setAttribute('class','delete');
-            //    removeBtn.style.width = "2.5rem";
-               removeBtn.style.height = "1.9rem";
-              
+               removeBtn.style.height = "1.9rem";            
             let heading = _liText.appendChild(h3);
                 _liText.appendChild(removeBtn);
-
             heading.style.textAlign = "left";
             heading.style.color = "green";
             heading.style.display = "inline-block";
-
             let text = document.createTextNode(_outPutText);
             let error = document.createTextNode("x");
-
             removeBtn.appendChild(error);
             removeBtn.setAttribute("value",error);
            // removeBtn.addEventListener('click',removeItems);
@@ -78,14 +69,12 @@ let _errorlist = document.getElementById('lists');
             let errorText = document.createTextNode("Please enter some value.");
             errorHeading.appendChild(errorText);
             _errorlist.append(errorHeading);
-            _errorlist.style.color = "maroon"; 
-         
+            _errorlist.style.color = "maroon";     
             }else{
                 console.log("error message already exist.");
             }
+        }
     }
-    
-   }
 
 //    function clearAll(){  
 //     let _clearList = document.getElementById('ul');
