@@ -1,0 +1,70 @@
+body{
+    background-color: #d1d4d3;
+}
+h4{
+    color:#ffeb3b;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+.main{
+    margin: 0 auto;
+    background-color: #260606;
+    width:35rem;
+    height: 30rem;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: column;
+   
+}
+.main > .divOne{
+    width:25rem;
+    height: 25rem;
+    display: flex;
+    background-color: #464d4a;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main > .divOne > .divTwo{
+    width:20rem;
+    height: 20rem;
+    display: flex;
+    background-color: #1f090e;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main > .divOne > .divTwo .divThree{
+    width:15rem;
+    height: 15rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #113512;
+    flex-direction: column;
+}
+.main > .divOne > .divTwo .divThree .divFour{
+    width:10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color :#0b0213;
+    flex-direction: column;
+}
+.main > .divOne > .divTwo .divThree .divFour .divFive{
+    width:7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color : #504801;
+    flex-direction: column;
+}
