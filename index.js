@@ -55,21 +55,23 @@ class carworld{
             }
         }
 
-        let removeBtn= document.querySelectorAll('.remove');          
+              
         document.body.addEventListener('click',function(e){
             if(e.target.className == "remove"){
-                removeItems(removeBtn,car);
+                removeItems(car);
             }
           });
 
-     function removeItems(removeBtn,car){
-         const items  =JSON.parse(localStorage.getItem('items')); 
-         let removeIndex = +(removeBtn.value);
-         let index = items.indexOf(removeIndex);      
-         for (var i = 0; i < items.length; i++) {
-             if(items[i] == removeIndex){
-                removeBtn.parentElement.parentElement.reamove();
-                removed.push(items.splice(index,1));
+     function removeItems(car){
+        let removeBtn= document.querySelector('.remove');   
+        removeBtn.parentElement.parentElement.remove();
+        const items  =JSON.parse(localStorage.getItem('items')); 
+        let removeIndex = +(removeBtn.value);
+        let index = items.indexOf(removeIndex);      
+        for (var i = 0; i < items.length; i++) {
+            if(items[i] == removeIndex){
+                console.log(removeBtn.parentElement.parentElement);
+                 removed.push(items.splice(index,1));
               break;
              }
          }

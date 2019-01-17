@@ -1,21 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>OOPs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-    <h2> OOP::Employee Record</h2>
-   <!-- <div id="main">
-       <form id="form">
-    first name : <input type="text" name="firstname" value="" id="firstname" class="firstname"><br><br>
-    last name :  <input type="text" name="lastname" id="lastname" class="lastname"><br><br>
-    age : <input type="text" name="age" id="age" class="age"><br><br>
-    salry :  <input type="text" name="salry" id="salry" class="salry"><br><br>
-    designation :  <input type="text" name="designation" id="designation" class="designation"><br><br>
-    organization : <input type="text" name="organization" id="organization" class="organization"><br><br>
-       <input type="submit" id="submit"> 
-</form>
-       <div class="output" id="output">
-   </div> -->
-<body>       
+    
+    <section id="main">
+        <h2>Car World</h2>
+        <form id="car-world" class="car-world">
+            name: <input type="text" class="input" name="name" id="name" value=""><br><br>
+            make: <input type="text" class="input" name="make" id="make" value=""><br><br>
+            price: <input type="text" class="input" name="price" id="price" value=""><br><br>
+            model: <input type="text" class="input" name="model" id="model" value=""><br><br>
+            year: <input type="text" class="input" name="year" id="year" value=""><br><br>
+            description: <textarea class="input" rows="10" cols="30" name="description" value="" id="description">
+                 </textarea><br><br>
+            <input type="submit" id="button" class="button">
+        </form>
+        <div class="table" id="table">
+          
+            <table class="table" id="table"  width="50%" >
+                <thead>
+                    <th>s.no</th>
+                    <th>name</th>
+                    <th>make</th>
+                    <th>price</th>
+                    <th>model</th>
+                    <th>year</th>
+                    <th>description</th>
+                    <th>action</th>
+                    </thead>
+                </table>
+        </div>
+    </section>
+
+    <script src="index.js" ></script>
+<style>
+.car-world{
+    border:1px solid grey;width: 15rem;padding: 1rem;margin: 0 auto;
+    margin-bottom: 1rem;
+}
+h2{
+    text-align: center;
+}
+input{
+    padding: 0.3rem;
+}
+       
+table, th, td {
+  border: 1px solid grey;
+  padding: 1rem; 
+  text-align: center;
+  margin: 0 auto;
+}
+</style>
+</body>
 </html>
-<script src='app.js'> </script>
