@@ -27,14 +27,13 @@ class searchGitRepo {
         const obj = new searchGitRepo();
         obj.getData(`https://api.github.com/users/${userInput}/repos`).then(response => {
         let ul = document.querySelector('ul');
-        ul.style.display = "flex";
-        ul.style.flexDirection = "column";
+ 
         ul.style.listStyleType = "none";
         let responseResult = JSON.parse(response);
         let records = responseResult;
         for (const key in records) {
             let li = document.createElement('li');
-            let  text = document.createTextNode(`${key}).  ${records[key].url}  :: ${records[key].name}`);
+            let  text = document.createTextNode(`${key}).  ${records[key].url}  ---::-----::--- ${records[key].name}`);
             li.appendChild(text);
             ul.appendChild(li);
        }

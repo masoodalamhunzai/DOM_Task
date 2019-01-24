@@ -1,34 +1,44 @@
 P{
     display:inline-flex;
     justify-content: space-between;
-    padding-left: 15rem;
-    color: #ff5722;
+    padding-left: 16rem;  
+    color: #093bac;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 h2{
 text-align: center;
-color:#ff5722;
+color:#093bac;
+}
+hr{
+    width:40rem;
+    border: 0.5px solid #031b51;
 }
 .form{
     margin : 0 auto;
-    border: 1px solid #ff5722;
-    width:20rem;
+    border: 1px solid #031b51;
+    width:18rem;
     padding: 1rem;
 }
 input{
     padding: 0.9rem;
-    border: 1px solid #ff5722;
+    border: 1px solid #031b51;
 }
 .output{
     margin : 0 auto;
-    width:50rem;
+    width:55rem;
+}
+.ul{
+    border: 1px solid  #031b51;
+   padding: 1rem;
 }
 li{
-    color:#a03310;
+    color:#031b51;
     font-size: 1rem;
+    padding: 0.5rem 0 0  0.9rem;
 }
 .submit{
-    color: #ff5722;
+    color: #031b51;
     text-transform: uppercase;
     font-weight: bold;
 }
