@@ -29,13 +29,12 @@ class searchGitRepo {
         let ul = document.querySelector('ul');
         ul.style.display = "flex";
         ul.style.flexDirection = "column";
-        ul.style.justifyContent = "space-between";
         ul.style.listStyleType = "none";
         let responseResult = JSON.parse(response);
         let records = responseResult;
         for (const key in records) {
             let li = document.createElement('li');
-            let  text = document.createTextNode(`${key} = ${records[key].url} : ${records[key].name}`);
+            let  text = document.createTextNode(`${key}).  ${records[key].url}  :: ${records[key].name}`);
             li.appendChild(text);
             ul.appendChild(li);
        }
@@ -43,7 +42,7 @@ class searchGitRepo {
       }).catch(error => 
             console.log(error +"error in repo")
             ); 
-    userInput.value = "" ;
+   
     }else{
         console.log("Please enter username");
         e.preventDefault();
