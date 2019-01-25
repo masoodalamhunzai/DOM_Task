@@ -1,0 +1,44 @@
+P{
+    display:inline-flex;
+    justify-content: space-between;
+    padding-left: 19rem;  
+    color: #19155e;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+h2{
+text-align: center;
+color:#19155e;
+}
+hr{
+    width:45rem;
+    border: 0.5px solid #19155e;
+}
+.form{
+    margin : 0 auto;
+    border: 1px solid #19155e;
+    width:18rem;
+    padding: 1rem;
+}
+input{
+    padding: 0.9rem;
+    border: 1px solid #19155e;
+}
+.output{
+    margin : 0 auto;
+    width:63rem;
+}
+.ul{
+    border: 1px solid  #19155e;
+   padding: 1rem;
+}
+li{
+    color:#19155e;
+    font-size: 1rem;
+    padding: 0.5rem 0 0  0.9rem;
+}
+.submit{
+    color: #19155e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
